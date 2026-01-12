@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1c2d, #050b12);
+  color: #e5ecf3;
+  line-height: 1.6;
+}
+
+/* Header */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f6c94c;
+}
+
+.brand img {
+  width: 48px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #f6c94c, #ffdd7a);
+  color: #0b1c2d;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(246,201,76,0.4);
+}
+
+.btn.big {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #cbd6e2;
+}
+
+/* Benefits */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 80px 8%;
+}
+
+.box {
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.box h3 {
+  color: #f6c94c;
+  margin-bottom: 10px;
+}
+
+/* Video */
+.video-area {
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-box {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  background: linear-gradient(135deg, #0e243b, #081423);
+  border: 2px dashed rgba(246,201,76,0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #f6c94c;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #081423, #050b12);
+}
+
+.cta h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #cbd6e2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 10%;
+  font-size: 14px;
+  color: #8896a8;
+  background: #050b12;
+}
