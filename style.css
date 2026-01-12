@@ -69,6 +69,26 @@ footer{text-align:center;padding:40px;color:#8896a8}
   font-size:14px;
 }
 
+.logic{
+  max-width:900px;
+  margin:0 auto 100px;
+  text-align:center;
+  padding:0 10%;
+  color:#cbd6e2;
+}
+
+.logic h3{
+  color:#f6c94c;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.logic p{
+  margin:10px 0;
+  font-size:18px;
+}
+
+
 
 
 
