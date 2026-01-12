@@ -117,6 +117,38 @@ footer{text-align:center;padding:40px;color:#8896a8}
   box-shadow:0 0 30px rgba(246,201,76,0.3);
 }
 
+.plan-proof{
+  padding:80px 10%;
+  text-align:center;
+  background:linear-gradient(135deg,#081423,#050b12);
+}
+
+.plan-proof h3{
+  color:#f6c94c;
+  margin-bottom:20px;
+}
+
+.plan-proof p{
+  max-width:900px;
+  margin:0 auto 40px;
+  color:#cbd6e2;
+}
+
+.proof-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.proof-grid div{
+  background:rgba(246,201,76,0.1);
+  border:1px solid rgba(246,201,76,0.4);
+  border-radius:16px;
+  padding:20px;
+  font-weight:700;
+  color:#f6c94c;
+}
+
 
 
 
