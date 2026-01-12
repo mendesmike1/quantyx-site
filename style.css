@@ -63,69 +63,50 @@ h3{font-size:26px;line-height:1.2}
   position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(5,11,18,.55),rgba(5,11,18,.92));
 }
-.hero-content{position:relative;z-index:2;padding:0 10%}
-.hero-sub{max-width:860px;margin:18px auto 0;color:#cbd6e2;font-size:18px}
 
-.hero-badge{
-  display:inline-block;
-  margin:22px auto 0;
-  padding:10px 18px;
-  border-radius:999px;
-  background:rgba(246,201,76,0.14);
-  border:1px solid rgba(246,201,76,0.5);
-  color:#f6c94c;
-  font-weight:800;
-  font-size:13px;
+/* AJUSTE FINO HERO */
+.hero-content{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+.hero-content h1{
+  margin-bottom:20px;
+}
+
+.hero-sub{
+  margin-bottom:26px;
 }
 
 .hero-ctas{
-  margin-top:30px;
-  display:flex;
-  gap:18px;
-  justify-content:center;
-}
-
-.hero-ctas .btn{
-  min-width:260px;
+  margin-top:36px;
 }
 
 .hero-metrics{
-  margin:34px auto 0;
-  max-width:900px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:14px;
+  margin-top:44px;
 }
+
 .metric{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:18px;
-  padding:16px 18px;
+  padding:20px;
 }
-.metric strong{display:block;color:#f6c94c;font-size:20px}
-.metric span{display:block;color:#cbd6e2;font-size:13px;margin-top:2px}
 
 /* PROVA DE VALOR */
-.plan-proof{
-  padding:80px 10%;
-  text-align:center;
-  background:linear-gradient(135deg,#081423,#050b12);
-  border-top:1px solid rgba(255,255,255,0.06);
-  border-bottom:1px solid rgba(255,255,255,0.06);
+.plan-proof h3{
+  font-size:34px;
 }
+
+.plan-proof .subtitle{
+  max-width:820px;
+  margin:14px auto 0;
+}
+
 .proof-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:16px;
-  margin-top:34px;
+  margin-top:42px;
 }
+
 .proof-grid div{
-  background:rgba(246,201,76,0.10);
-  border:1px solid rgba(246,201,76,0.35);
-  border-radius:16px;
-  padding:18px;
-  font-weight:800;
-  color:#f6c94c;
+  font-size:18px;
+  padding:22px;
 }
 
 /* BENEFITS */
@@ -147,36 +128,30 @@ h3{font-size:26px;line-height:1.2}
 
 /* IMPACT */
 .impact{
-  padding:80px 10%;
+  padding-top:100px;
+  padding-bottom:100px;
 }
-.impact .wrap{
-  text-align:center;
+
+.impact h2{
+  margin-bottom:12px;
 }
 
 .impact-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
-  margin-top:34px;
+  margin-top:46px;
 }
-.impact-card{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:18px;
-  padding:22px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+
+.logic-box{
+  margin-top:40px;
 }
-.impact-card strong{
-  display:block;
-  font-size:28px;
-  color:#f6c94c;
-  margin-bottom:8px;
+
+.logic-box h3{
+  font-size:32px;
 }
-.impact-card span{color:#cbd6e2;font-size:14px}
+
+.logic-step{
+  font-size:17px;
+  line-height:1.4;
+}
 
 /* LÓGICA */
 .logic-box{
@@ -377,6 +352,7 @@ footer{text-align:center;padding:40px;color:#8896a8}
   .scarcity-box{grid-template-columns:1fr}
   .featured{transform:none}
 }
+
 
 
 
