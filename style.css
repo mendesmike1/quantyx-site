@@ -88,6 +88,37 @@ footer{text-align:center;padding:40px;color:#8896a8}
   font-size:18px;
 }
 
+.logic-box{
+  background:rgba(255,255,255,0.03);
+  border-top:1px solid rgba(246,201,76,0.2);
+  border-bottom:1px solid rgba(246,201,76,0.2);
+  padding:80px 10%;
+}
+
+.logic-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.logic-step{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:30px;
+  font-size:18px;
+  color:#cbd6e2;
+}
+
+.highlight-step{
+  border-color:#f6c94c;
+  color:#f6c94c;
+  box-shadow:0 0 30px rgba(246,201,76,0.3);
+}
+
+
+
 
 
 
