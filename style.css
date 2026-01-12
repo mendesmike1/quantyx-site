@@ -37,3 +37,24 @@ body{background:radial-gradient(circle at top,#0b1c2d,#050b12);color:#e5ecf3;lin
 
 .cta{text-align:center;padding:100px 10%;background:linear-gradient(135deg,#081423,#050b12)}
 footer{text-align:center;padding:40px;color:#8896a8}
+
+.power-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+  margin:50px 0;
+}
+
+.power-box{
+  background:linear-gradient(135deg,rgba(246,201,76,0.15),rgba(255,255,255,0.02));
+  border:1px solid rgba(246,201,76,0.4);
+  border-radius:16px;
+  padding:30px;
+  font-size:20px;
+  font-weight:700;
+  color:#f6c94c;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(246,201,76,0.15);
+}
+
+
