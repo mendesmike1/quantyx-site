@@ -57,4 +57,18 @@ footer{text-align:center;padding:40px;color:#8896a8}
   box-shadow:0 10px 30px rgba(246,201,76,0.15);
 }
 
+.hero-badge{
+  display:inline-block;
+  margin:25px auto 0;
+  padding:10px 22px;
+  border-radius:50px;
+  background:rgba(246,201,76,0.15);
+  border:1px solid rgba(246,201,76,0.5);
+  color:#f6c94c;
+  font-weight:700;
+  font-size:14px;
+}
+
+
+
 
