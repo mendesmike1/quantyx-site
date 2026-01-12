@@ -47,11 +47,20 @@
     o robô se paga e continua trabalhando para você o mês inteiro.
   </p>
 
-  <div class="proof-grid">
-    <div>📈 Mais contatos</div>
-    <div>📲 Mais respostas</div>
-    <div>💰 Mais oportunidades</div>
-    <div>🚀 Mais escala</div>
+<section class="plan-proof">
+  <div class="wrap">
+    <h3>O Quantyx PRO não é custo — é ferramenta de faturamento</h3>
+    <p>
+      Se você fechar apenas <strong>1 venda por dia</strong> usando SMS e RCS,
+      o robô se paga e continua trabalhando para você o mês inteiro.
+    </p>
+
+    <div class="proof-grid">
+      <div>📈 Mais contatos</div>
+      <div>📲 Mais respostas</div>
+      <div>💰 Mais oportunidades</div>
+      <div>🚀 Mais escala</div>
+    </div>
   </div>
 </section>
 
@@ -71,11 +80,32 @@
 </section>
 
 <section class="impact">
-  <h2>O que você consegue com o Quantyx PRO</h2>
-  <p>
-    Uma única máquina pode alcançar <strong>30.000 pessoas por mês</strong> usando SMS e RCS.
-    Mais contatos, mais respostas e mais oportunidades todos os dias.
-  </p>
+  <div class="wrap">
+    <h2>O que você consegue com o Quantyx PRO</h2>
+    <p class="subtitle">
+      Uma única máquina pode alcançar <strong>30.000 pessoas por mês</strong> usando SMS e RCS.
+      Mais contatos, mais respostas e mais oportunidades todos os dias.
+    </p>
+
+    <div class="impact-grid">
+      <div class="impact-card">
+        <strong>30.000/mês</strong>
+        <span>Alcance mensal estimado</span>
+      </div>
+      <div class="impact-card">
+        <strong>1.200/dia</strong>
+        <span>Envios diários (máx.)</span>
+      </div>
+      <div class="impact-card">
+        <strong>Automático</strong>
+        <span>Pausas e padrões humanos</span>
+      </div>
+      <div class="impact-card">
+        <strong>Direto</strong>
+        <span>No celular do cliente</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="logic logic-box">
@@ -168,6 +198,76 @@
   </div>
 </section>
 
+<section class="after-plans">
+  <div class="wrap">
+    <h3>Quem ativa hoje, sai na frente</h3>
+    <p class="subtitle">
+      SMS e RCS entregam direto no celular. Quanto antes você ativar, mais rápido você começa a colher respostas.
+    </p>
+
+    <div class="social-grid">
+      <div class="social-card">
+        <div class="stars">★★★★★</div>
+        <p>“Comecei e já tive respostas no mesmo dia. Muito acima do que eu esperava.”</p>
+        <span>— Cliente (placeholder)</span>
+      </div>
+      <div class="social-card">
+        <div class="stars">★★★★★</div>
+        <p>“Ferramenta forte. O diferencial é o envio humanizado e as pausas automáticas.”</p>
+        <span>— Cliente (placeholder)</span>
+      </div>
+      <div class="social-card">
+        <div class="stars">★★★★★</div>
+        <p>“Pra quem trabalha com vendas, é um atalho. Chega direto no cliente.”</p>
+        <span>— Cliente (placeholder)</span>
+      </div>
+    </div>
+
+    <div class="scarcity-box">
+      <div class="scarcity-left">
+        <h4>⚠️ Lote atual com vagas limitadas</h4>
+        <p>
+          Para manter estabilidade e qualidade dos envios, liberamos um número limitado de ativações por lote.
+          Quando esgotar, novas ativações ficam pausadas.
+        </p>
+      </div>
+
+      <div class="scarcity-right">
+        <div class="timer-title">Oferta pode encerrar em:</div>
+        <div id="timer" class="timer">19:59</div>
+        <div class="slots">Vagas neste lote: <strong id="slots">27</strong></div>
+        <a href="#planos" class="btn big">Ativar agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Countdown simples (20 min) + vagas (placeholder)
+  (function () {
+    let total = 20 * 60; // 20 minutos
+    const el = document.getElementById("timer");
+    const slotsEl = document.getElementById("slots");
+
+    // placeholder de vagas (fica “realista”, mas é estático/aleatório)
+    let slots = 27;
+    slotsEl.textContent = slots;
+
+    setInterval(() => {
+      total = Math.max(0, total - 1);
+      const m = String(Math.floor(total / 60)).padStart(2, "0");
+      const s = String(total % 60).padStart(2, "0");
+      el.textContent = `${m}:${s}`;
+
+      // “queda” leve de vagas (bem discreta)
+      if (total % 90 === 0 && slots > 7) {
+        slots -= 1;
+        slotsEl.textContent = slots;
+      }
+    }, 1000);
+  })();
+</script>
+
 <section class="cta">
   <h2>Pare de depender de anúncios caros</h2>
   <p>
@@ -184,6 +284,7 @@
 
 </body>
 </html>
+
 
 
 
