@@ -495,54 +495,13 @@ footer{text-align:center;padding:40px;color:#8896a8}
   .plan{padding:28px}
 }
 
-.scarcity-box{
-  background:linear-gradient(135deg, rgba(246,201,76,0.10), rgba(255,255,255,0.02));
-  border:1px solid rgba(246,201,76,0.28);
-  border-radius:22px;
-  padding:30px;
-}
-
-.scarcity-left h4{
-  font-size:22px;
-  letter-spacing:.2px;
-}
-
-.scarcity-left p{
-  font-size:16px;
-  line-height:1.6;
-  margin-top:10px;
-  max-width:680px;
-}
-
-.scarcity-right{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:14px;
-}
-
-.timer-title{
-  text-transform:uppercase;
-  letter-spacing:1px;
-  font-weight:800;
-  opacity:.9;
-}
-
-.timer{
-  font-size:52px;
-  line-height:1;
-}
-
-.slots{
-  font-size:15px;
-}
-
 .plan{
   justify-content:space-between;
 }
 .plan-cta{
   width:100%;
 }
+
 
 
 
