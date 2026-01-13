@@ -60,42 +60,53 @@ h3{font-size:26px;line-height:1.2}
 .highlight{color:#f6c94c}
 .subtitle{color:#cbd6e2;margin-top:10px}
 
-/* HERO (1 - corrigir “apagado/escuro” e “espremido”) */
+/* HERO */
 .hero-3d{
   position:relative;
-  min-height:84vh;
+  min-height:82vh;
   background:url("HERO_BG.jpg") center/cover no-repeat;
-  display:flex;align-items:center;justify-content:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
 }
+
 .hero-overlay{
   position:absolute;
   inset:0;
-  background:
-    radial-gradient(circle at 50% 10%, rgba(246,201,76,.22), transparent 55%),
-    linear-gradient(180deg,rgba(5,11,18,.15),rgba(5,11,18,.75));
+  background:linear-gradient(
+    180deg,
+    rgba(5,11,18,.25) 0%,
+    rgba(5,11,18,.65) 45%,
+    rgba(5,11,18,.92) 100%
+  );
 }
+
 .hero-content{
   position:relative;
   z-index:2;
   padding:140px 10% 120px;
   max-width:1200px;
 }
+
 .hero-content h1{
   margin:0 auto 18px;
-  text-shadow:0 10px 30px rgba(0,0,0,.55);
+  color:#ffffff;
+  text-shadow:0 10px 30px rgba(0,0,0,.65);
 }
+
 .hero-sub{
   max-width:900px;
-  margin:0 auto;
-  color:#dbe6f3;
+  margin:0 auto 26px;
+  color:#e8f0fb;
   font-size:18px;
 }
+
 .hero-badge{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  margin:24px auto 0;
+  margin:18px auto 26px;
   padding:10px 18px;
   border-radius:999px;
   background:rgba(246,201,76,0.18);
@@ -103,13 +114,6 @@ h3{font-size:26px;line-height:1.2}
   color:#f6c94c;
   font-weight:900;
   font-size:13px;
-}
-.hero-badge{
-  margin-bottom:24px;
-}
-
-.hero-sub{
-  margin-bottom:28px;
 }
 
 .hero-metrics{
@@ -494,6 +498,7 @@ footer{text-align:center;padding:40px;color:#8896a8}
 .slots{
   font-size:15px;
 }
+
 
 
 
