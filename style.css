@@ -513,6 +513,14 @@ footer{text-align:center;padding:40px;color:#8896a8}
   font-size:15px;
 }
 
+.plan{
+  justify-content:space-between;
+}
+.plan-cta{
+  width:100%;
+}
+
+
 
 
 
