@@ -69,16 +69,16 @@ h3{font-size:26px;line-height:1.2}
   text-align:center;
 }
 .hero-overlay{
-  position:absolute;inset:0;
-  /* MENOS escuro para não “matar” o BG */
+  position:absolute;
+  inset:0;
   background:
-    radial-gradient(circle at 30% 15%, rgba(246,201,76,.14), transparent 45%),
-    linear-gradient(180deg,rgba(5,11,18,.22),rgba(5,11,18,.78));
+    radial-gradient(circle at 50% 10%, rgba(246,201,76,.22), transparent 55%),
+    linear-gradient(180deg,rgba(5,11,18,.15),rgba(5,11,18,.75));
 }
 .hero-content{
   position:relative;
   z-index:2;
-  padding:110px 10% 90px;
+  padding:140px 10% 120px;
   max-width:1200px;
 }
 .hero-content h1{
@@ -103,6 +103,17 @@ h3{font-size:26px;line-height:1.2}
   color:#f6c94c;
   font-weight:900;
   font-size:13px;
+}
+.hero-badge{
+  margin-bottom:24px;
+}
+
+.hero-sub{
+  margin-bottom:28px;
+}
+
+.hero-metrics{
+  margin-top:46px;
 }
 
 .hero-ctas{
@@ -441,3 +452,4 @@ footer{text-align:center;padding:40px;color:#8896a8}
   .featured{transform:none}
   .plan{padding:28px}
 }
+
