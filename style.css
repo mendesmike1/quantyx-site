@@ -496,11 +496,14 @@ footer{text-align:center;padding:40px;color:#8896a8}
 }
 
 .plan{
-  justify-content:space-between;
+  justify-content:flex-start;
 }
+
 .plan-cta{
+  margin-top:auto;
   width:100%;
 }
+
 
 
 
