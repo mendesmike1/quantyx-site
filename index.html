@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Quantyx PRO — Envie até 1.200 mensagens por dia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css?v=20260113-3" />
+  <link rel="stylesheet" href="style.css?v=20260113-4" />
 </head>
 <body>
 
@@ -263,8 +263,36 @@
   <p>Suporte: suporte@quantyx-pro.com.br</p>
 </footer>
 
+<script>
+let seconds = 20 * 60; // 20 minutos
+let slots = 27;
+
+function updateTimer(){
+  const min = String(Math.floor(seconds / 60)).padStart(2,'0');
+  const sec = String(seconds % 60).padStart(2,'0');
+  document.querySelector(".timer").textContent = `${min}:${sec}`;
+
+  if(seconds > 0){
+    seconds--;
+  }
+}
+setInterval(updateTimer, 1000);
+
+// Simula vagas sendo consumidas
+setInterval(() => {
+  if(slots > 1){
+    if(Math.random() < 0.25){ // chance de cair
+      slots--;
+      document.querySelector(".slots strong").textContent = slots;
+    }
+  }
+}, 4000);
+</script>
+
+
 </body>
 </html>
+
 
 
 
