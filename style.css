@@ -310,13 +310,20 @@ h3{font-size:26px;line-height:1.2}
 }
 .plan{
   position:relative;
-  background:rgba(255,255,255,.06);
-  border-radius:24px;
-  padding:34px;
-  border:2px solid rgba(246,201,76,.20);
+  background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));
+  border-radius:26px;
+  padding:42px 34px;
+  border:2px solid rgba(246,201,76,.25);
   display:flex;
   flex-direction:column;
-  text-align:left;
+  align-items:center;
+  text-align:center;
+  transition:.25s;
+}
+
+.plan:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 50px rgba(246,201,76,.15);
 }
 .featured{
   border-color:#f6c94c;
@@ -353,7 +360,14 @@ h3{font-size:26px;line-height:1.2}
 .save{color:#ffdd7a;margin:6px 0 12px;font-weight:900}
 
 .plan-list{list-style:none;margin:16px 0 18px;padding:0}
-.plan-list li{margin:10px 0;color:#cbd6e2}
+.plan-list li{
+  margin:12px 0;
+  color:#dbe6f3;
+  font-size:16px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
 
 /* perks mais “premium” */
 .plan-perks{
@@ -498,6 +512,7 @@ footer{text-align:center;padding:40px;color:#8896a8}
 .slots{
   font-size:15px;
 }
+
 
 
 
