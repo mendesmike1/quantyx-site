@@ -593,6 +593,24 @@ footer{text-align:center;padding:40px;color:#8896a8}
   }
 }
 
+@media (max-width: 768px){
+  .hero-3d{
+    background-position: center top;
+    background-size: auto 120%;
+    min-height: 100vh;
+  }
+
+  .hero-overlay{
+    background:linear-gradient(
+      180deg,
+      rgba(5,11,18,.15) 0%,
+      rgba(5,11,18,.55) 45%,
+      rgba(5,11,18,.90) 100%
+    );
+  }
+}
+
+
 
 
 
