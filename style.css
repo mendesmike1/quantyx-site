@@ -64,7 +64,7 @@ h3{font-size:26px;line-height:1.2}
 .hero-3d{
   position:relative;
   min-height:82vh;
-  background:url("HERO_BG.jpg") center/cover no-repeat;
+  background:url("HERO_BG.jpg?v=2") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -609,6 +609,7 @@ footer{text-align:center;padding:40px;color:#8896a8}
     );
   }
 }
+
 
 
 
