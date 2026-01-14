@@ -610,12 +610,6 @@ footer{text-align:center;padding:40px;color:#8896a8}
   }
 }
 
-@media (max-width: 768px){
-  .hero-3d{
-    background-blend-mode: multiply;
-    background-color: rgba(5,11,18,0.85);
-  }
-}
 
 
 
