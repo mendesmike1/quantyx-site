@@ -279,6 +279,16 @@ h3{font-size:26px;line-height:1.2}
   border:1px solid rgba(255,255,255,0.10);
 }
 .video-wrapper iframe{width:100%;height:520px;border:0}
+.video-wrapper{
+  aspect-ratio:16 / 9;
+}
+
+.video-wrapper video{
+  width:100%;
+  height:100%;
+  display:block;
+  background:#000;
+}
 
 /* POWER GRID */
 .power-grid{
@@ -473,7 +483,7 @@ footer{text-align:center;padding:40px;color:#8896a8}
   h2{font-size:32px}
   .top{padding:14px 6%}
   .hero-content{padding:86px 6% 76px}
-  .video-wrapper iframe{height:360px}
+  .video-wrapper{aspect-ratio:16 / 9;}
   .scarcity-box{grid-template-columns:1fr}
   .featured{transform:none}
   .plan{padding:28px}
@@ -609,6 +619,7 @@ footer{text-align:center;padding:40px;color:#8896a8}
     );
   }
 }
+
 
 
 
