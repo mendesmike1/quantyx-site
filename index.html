@@ -349,11 +349,22 @@ setInterval(() => {
     }
   }
 }, 4000);
-</script>
 
+<script>
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.get("download") === "1"){
+    const btn = document.getElementById("btn-download");
+    if(btn){
+      btn.style.display = "inline-flex";
+    }
+  }
+})();
+</script>
 
 </body>
 </html>
+
 
 
 
