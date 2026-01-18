@@ -327,14 +327,19 @@
 </footer>
 
 <script>
+/* =========================
+   TIMER + ESCASSEZ
+   ========================= */
 let seconds = 20 * 60; // 20 minutos
 let slots = 27;
 
 function updateTimer(){
   const min = String(Math.floor(seconds / 60)).padStart(2,'0');
   const sec = String(seconds % 60).padStart(2,'0');
-  document.querySelector(".timer").textContent = `${min}:${sec}`;
-
+  const timerEl = document.querySelector(".timer");
+  if(timerEl){
+    timerEl.textContent = `${min}:${sec}`;
+  }
   if(seconds > 0){
     seconds--;
   }
@@ -343,29 +348,35 @@ setInterval(updateTimer, 1000);
 
 // Simula vagas sendo consumidas
 setInterval(() => {
-  if(slots > 1){
-    if(Math.random() < 0.25){ // chance de cair
-      slots--;
-      document.querySelector(".slots strong").textContent = slots;
+  if(slots > 1 && Math.random() < 0.25){
+    slots--;
+    const slotsEl = document.querySelector(".slots strong");
+    if(slotsEl){
+      slotsEl.textContent = slots;
     }
   }
 }, 4000);
 
-<script>
+/* =========================
+   LIBERAR DOWNLOAD VIA ?download=1
+   ========================= */
 (function(){
   const params = new URLSearchParams(window.location.search);
   if(params.get("download") === "1"){
     const btn = document.getElementById("btn-download");
     if(btn){
       btn.style.display = "inline-flex";
+      console.log("DOWNLOAD LIBERADO");
     }
   }
 })();
 </script>
 
 
+
 </body>
 </html>
+
 
 
 
