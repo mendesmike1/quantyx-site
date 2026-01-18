@@ -621,20 +621,23 @@ footer{text-align:center;padding:40px;color:#8896a8}
 }
 
 /* Header buttons: mais visível no topo */
+.header-actions{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
 .header-actions .btn{
-  padding: 12px 22px;
-  font-size: 15px;
-  font-weight: 900;
+  padding:12px 22px;
+  font-size:15px;
+  font-weight:900;
 }
 
 .header-actions .btn.ghost{
-  background: rgba(246,201,76,0.10);
-  border: 1px solid rgba(246,201,76,0.70);
-  color: #f6c94c;
+  background:rgba(246,201,76,0.12);
+  border:1px solid rgba(246,201,76,0.65);
+  color:#f6c94c;
 }
-
-
-
 
 
 
