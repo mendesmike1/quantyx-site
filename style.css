@@ -638,6 +638,86 @@ footer{text-align:center;padding:40px;color:#8896a8}
   border:1px solid rgba(246,201,76,0.65);
   color:#f6c94c;
 }
+/* =========================
+   ANDROID ONLY ALERT
+   ========================= */
+.platform-alert{
+  margin:26px auto 0;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:12px 20px;
+  border-radius:999px;
+  background:rgba(76,175,80,0.14);
+  border:1px solid rgba(76,175,80,0.55);
+  color:#9ff0b0;
+  font-weight:900;
+  font-size:14px;
+  box-shadow:0 0 28px rgba(76,175,80,.25);
+}
+
+.platform-alert .muted{
+  font-weight:600;
+  color:#cfe9d6;
+  opacity:.85;
+}
+
+/* Bolinha pulsante */
+.pulse-dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#4caf50;
+  box-shadow:0 0 0 rgba(76,175,80,.7);
+  animation:pulse 1.6s infinite;
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(76,175,80,.7)}
+  70%{box-shadow:0 0 0 10px rgba(76,175,80,0)}
+  100%{box-shadow:0 0 0 0 rgba(76,175,80,0)}
+}
+/* =========================
+   AUTHORITY / WHO IS IT FOR
+   ========================= */
+.authority-strip{
+  padding:86px 10%;
+  text-align:center;
+  background:linear-gradient(135deg,#050b12,#081423);
+  border-top:1px solid rgba(255,255,255,0.06);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.authority-strip h3{
+  font-size:34px;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.authority-grid{
+  margin:40px auto 0;
+  max-width:900px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+
+.authority-grid div{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:16px;
+  padding:18px;
+  font-weight:900;
+  color:#f6c94c;
+  box-shadow:0 10px 26px rgba(0,0,0,.35);
+}
+
+.authority-foot{
+  margin-top:36px;
+  color:#cbd6e2;
+  font-size:16px;
+}
+
 
 
 
