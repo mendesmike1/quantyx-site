@@ -412,7 +412,20 @@ setInterval(() => {
   }
 })();
 </script>
+<script>
+const MANUTENCAO = true;
 
+if (MANUTENCAO) {
+  // bloqueia TODOS os cliques em botões e links
+  document.addEventListener("click", function(e) {
+    const target = e.target.closest("a, button");
+    if (target) {
+      e.preventDefault();
+      alert("⚙️ Sistema em manutenção. Voltamos em breve.");
+    }
+  }, true);
+}
+</script>
 
 
 </body>
